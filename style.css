@@ -1,0 +1,305 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(285deg, #270a0f, #270a0f);
+
+}
+
+/* Header Section Styles */
+.header-section {
+    background: black;
+    padding: 20px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 10%;
+    border-radius: 30px;
+    margin-left: 3%;
+}
+
+.telegram-button {
+    order: 2; /* Place the button on the right side */
+    background: linear-gradient(285deg, #ffffff, #db5802, #dd8f07, #d86512, #270a0f);
+    margin-right: 10%;
+    padding: 5px 30px;
+    border-radius: 8%;
+}
+
+.telegram-icon {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.telegram-icon:hover {
+    background: linear-gradient(285deg, #ffffff, #db5802, #dd8f07, #d86512, #270a0f);
+    border: 3px solid #ffffff; /* Add a border in the hover state */
+    transform: scale(1.05); /* Grow slightly in size on hover */
+}
+
+
+/* About Section Styles */
+.about {
+        position: relative;
+        height: 600px; /* Adjust the height as needed */
+        overflow: hidden; /* Ensure overflow doesn't affect the layout */
+    }
+
+    .about::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #270a0f;
+        background-size: 50%; /* Adjust the background image size */
+        opacity: 0.4; /* Adjust the opacity for darkness */
+    }
+.about-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+    width: 70%;
+    font-family: 'Press Start 2P', cursive;
+    list-style: none;
+}
+
+.about-overlay ul{
+    list-style: none;
+}
+
+.about-overlay ul li i{
+    color: #dd8f07;
+    padding-right: 20px;
+    height: 50%;
+}
+
+
+.join-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0f0f0e;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* Add the provided CSS as a starting point */
+
+.service-section {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next row on smaller screens */
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+
+.service {
+    position: relative;
+    flex: 1;
+    overflow: hidden;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.4s;
+    margin: 10px;
+    border-radius: 10%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: linear-gradient(285deg, #ffffff, #db5802, #dd8f07, #d86512, #270a0f); */
+    transition: background 0.4s ease;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    padding: 40px 60px;
+}
+
+.service:hover .overlay {
+    background: rgba(0, 0, 0, 0);
+}
+
+.service:hover h1 {
+    transform: translateY(-50%);
+}
+
+h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .service {
+        flex: 100%; /* Take up the full width on smaller screens */
+    }
+}
+
+
+/* Partners Section Styles */
+.partners-section {
+    /* background: linear-gradient(285deg, #ffffff, #db5802, #dd8f07, #d86512, #270a0f);; Adjust background color as needed */
+    padding: 40px 0;
+    overflow: hidden; /* Hide overflowing content */
+    color: #ffffff;
+    text-align: center; /* Center text within the roadmap section */
+}
+
+.partners-container {
+    display: flex;
+    animation: slide 5s linear infinite; /* Adjust animation duration as needed */
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(5);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Adjust the size and styling of partner images */
+.partners-container img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 20px; /* Adjust margin between images */
+}
+
+
+/* Adjust the size and styling of partner images */
+.partners-container img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 20px; /* Adjust margin between images */
+}
+
+
+/* Team Section Styles */
+.team-section {
+    /* background: linear-gradient(285deg, #ffffff, #db5802, #dd8f07, #d86512, #270a0f); */
+    background-color: #270a0f;
+    padding: 40px 0;
+    text-align: center; /* Center text within the roadmap section */
+    color: #ffffff;
+}
+
+.team-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    /* background-color: #dd8f07; */
+    border-radius: 10px;
+    width: 40%;
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+}
+
+.team-member img {
+    width: 30%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.social-media img {
+    width: 30px;
+    margin: 0 5px;
+}
+
+/* Roadmap Section Styles */
+/* Roadmap Section Styles */
+.roadmap-section {
+    /* background: linear-gradient(285deg, #ffffff, #db5802, #dd8f07, #d86512, #270a0f); */
+    color: #ffffff;
+    padding: 40px 0;
+    text-align: center; /* Center text within the roadmap section */
+}
+
+.roadmap-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.roadmap-phase {
+    background-color: #270a0f;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.roadmap-phase img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .roadmap-container {
+        flex-direction: column; /* Stack phases vertically */
+        align-items: center; /* Center phases on smaller screens */
+    }
+
+    .roadmap-phase {
+        margin-bottom: 20px; /* Add space between phases */
+    }
+}
+
+
+
+/* Footer Styles */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .about-overlay {
+        width: 90%;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .team {
+        grid-template-columns: 1fr;
+    }
+}
