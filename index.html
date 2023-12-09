@@ -4,211 +4,257 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <title>Gorilla lounge</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <title>Gorilla Gem lounge</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Header Section -->
-    <!-- Header Section -->
-<header class="header-section">
-    <div class="container">
-        <div class="header-content">
+     <!-- Header Section -->
+     <header>
+        <!-- Navigation Bar -->
+        <nav class="navbar">
             <!-- Logo -->
-            <div class="logo">
-                <img src="gorilla.jpg" alt="gorrilla lounge Logo">
+            <div class="navbar-logo">
+                <img src="gorilla.jpg" alt="Gorilla Lounge Logo">
             </div>
-            
-            <!-- Telegram Button -->
-            <div class="telegram-button">
-                <button class="telegram-icon">
-                    <i class="fab fa-telegram"></i>
-                </button>
-            </div>
-        </div>
-    </div>
-</header>
+
+            <!-- Menu Items -->
+            <nav class="navbar-menu">
+                <a href="about">About</a>
+                <a href="services">Services</a>
+                <a href="partners">Partners</a>
+                <a href="token">Token</a>
+                <a href="team">Team</a>
+                <a href="roadmap">Roadmap</a>
+            </nav>
+
+            <!-- Menu Icon for Mobile -->
+            <i class="fas fa-bars menu-icon" onclick="toggleMenu()"></i>
+            <!-- Cancel Icon for Mobile -->
+            <i class="fas fa-times cancel-icon" onclick="toggleMenu()"></i>
+        </nav>
+    </header>
 
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="about-overlay">
+   <!-- About Section (Hero Section) -->
+<section id="about" class="hero-section">
+    <div class="hero-content">
+        <!-- Writeup on the left -->
+        <div class="writeup" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
             <h2>At Gorilla Lounge, we are committed to maintaining a space where Gamefi and Defi projects can thrive, and investors can gain comprehensive knowledge.</h2>
             <ul>
-                <li> Handpicked quality projects promising substantial growth and interest.</li>
-                <li> Facilitate engaging community interactions, social media promotion, exclusive AMA sessions, and reward packages.</li>
-                <li> Provide a platform designed to enhance knowledge, encourage collaboration, and reward active participation.</li>
+                <li>Handpicked quality projects promising substantial growth and interest.</li>
+                <li>Facilitate engaging community interactions, social media promotion, exclusive AMA sessions, and reward packages.</li>
+                <li>Provide a platform designed to enhance knowledge, encourage collaboration, and reward active participation.</li>
             </ul>
             <p>By joining the Gorilla Gems Lounge, you become part of a community that values learning, growth, and rewards.</p>
-            <a href="#" class="join-button">Join Us</a>
-        </div>
-    </section>
-
-    <!-- Service Section -->
-
-    <div class="service-section">
-
-        <!-- Featured Services Heading -->
-    
-        <!-- Community Interaction Service -->
-        <div id="community" class="service">
-            <div class="overlay"></div>
-            <div class="content">
-                <i class="fas fa-users"></i>
-                <h1>Community Interaction</h1>
+            <!-- Two buttons below the writeup -->
+            <div class="buttons">
+                <a href="https://t.me/GorillaGemsLoungePortal" class="join-button">Join Now</a>
+                <a href="https://t.me/Certified_Ape" class="another-button">Contact Us</a>
+                <!-- Add another button if needed -->
             </div>
         </div>
-    
-        <!-- Social Media Promotion Service -->
-        <div id="social-media" class="service">
-            <div class="overlay"></div>
-            <div class="content">
-                <i class="fab fa-twitter"></i>
-                <h1>Social Media Promotion</h1>
-            </div>
-        </div>
-    
-        <!-- Exclusive AMA Service -->
-        <div id="ama" class="service">
-            <div class="overlay"></div>
-            <div class="content">
-                <i class="fas fa-microphone-alt"></i>
-                <h1>Exclusive AMA</h1>
-            </div>
-        </div>
-    
-        <!-- Giveaways Packages Service -->
-        <div id="giveaways" class="service">
-            <div class="overlay"></div>
-            <div class="content">
-                <i class="fas fa-gift"></i>
-                <h1>Giveaways Packages</h1>
-            </div>
-        </div>
-    
-        <!-- Stable Collaborations Service -->
-        <div id="collaborations" class="service">
-            <div class="overlay"></div>
-            <div class="content">
-                <i class="fas fa-handshake"></i>
-                <h1>Stable Collaborations</h1>
-            </div>
-        </div>
-    
-        <!-- Knowledge Expansion Service -->
-        <div id="knowledge" class="service">
-            <div class="overlay"></div>
-            <div class="content">
-                <i class="fas fa-lightbulb"></i>
-                <h1>Knowledge Expansion</h1>
-            </div>
-        </div>
-    
-    </div>
-
-
-   <!-- Partners Section -->
-<section class="partners-section">
-    <div class="container">
-        <h2>Our Partners</h2>
-        <div class="partners-container">
-            <!-- Images will be dynamically added here using HTML only -->
-            <img src="partner1.jpg" alt="Partner 1">
-            <img src="partner2.jpg" alt="Partner 2">
-            <img src="partner2.jpg" alt="Partner 2">
-            <img src="partner2.jpg" alt="Partner 2">
-            <img src="partner2.jpg" alt="Partner 2">
-            <img src="partner2.jpg" alt="Partner 2">
-            <img src="partner2.jpg" alt="Partner 2">
-            <img src="partner2.jpg" alt="Partner 2">
-            <img src="partner2.jpg" alt="Partner 2">
-            <img src="partner2.jpg" alt="Partner 2">
-            <img src="partner2.jpg" alt="Partner 2">
-            <img src="partner2.jpg" alt="Partner 2">
-            <img src="partner2.jpg" alt="Partner 2">
-            <img src="partner2.jpg" alt="Partner 2">
-            <!-- Add more images as needed -->
+        <!-- Image on the right -->
+        <div class="hero-image" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+            <img src="gorilla.jpg" alt="gorrilla lounge Logo">
         </div>
     </div>
 </section>
 
+
+    <!-- Service Section -->
+    <section id="services" class="service-section">
+        <!-- Featured Services Heading -->
+        <div class="featured-services" data-aos="fade-up" data-aos-duration="3000">
+            <h1 class="center">Featured Services</h1>
+            <p class="center">Our array of effective and engaging services are designed to provide you with a comprehensive understanding of Gamefi and Defi projects, while creating rewarding experiences.</p>
+        </div>
+    
+        <!-- Community Interaction Service -->
+        <div id="community" class="service" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+            <div class="content">
+                <i class="fas fa-users service-icon"></i>
+                <h3>Community Interaction</h3>
+            </div>
+        </div>
+    
+        <!-- Social Media Promotion Service -->
+        <div id="social-media" class="service" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+            <div class="content">
+                <i class="fab fa-telegram service-icon"></i>
+                <h3>Social Media Promotion</h3>
+            </div>
+        </div>
+    
+        <!-- Exclusive AMA Service -->
+        <div id="ama" class="service" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+            <div class="content">
+                <i class="fas fa-microphone-alt service-icon"></i>
+                <h3>Exclusive AMA</h3>
+            </div>
+        </div>
+    
+        <!-- Giveaways Packages Service -->
+        <div id="giveaways" class="service" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+            <div class="content">
+                <i class="fas fa-gift service-icon"></i>
+                <h3>Giveaways Packages</h3>
+            </div>
+        </div>
+    
+        <!-- Stable Collaborations Service -->
+        <div id="collaborations" class="service" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+            <div class="content">
+                <i class="fas fa-handshake service-icon"></i>
+                <h3>Stable Collaborations</h3>
+            </div>
+        </div>
+    
+        <!-- Knowledge Expansion Service -->
+        <div id="knowledge" class="service" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+            <div class="content">
+                <i class="fas fa-lightbulb service-icon"></i>
+                <h3>Knowledge Expansion</h3>
+            </div>
+        </div>
+    </section>
+    
+
+  <!-- Partners Section -->
+<section class="partners-section">
+    <div class="container">
+        <h1>Our Partners</h1>
+        <div class="partners-container">
+            <!-- Images with Links -->
+            <a href="https://t.me/alxandercalls" target="_blank"><img src="partners/alexander.jpg" alt="Partner 1"></a>
+            <a href="https://t.me/CatDogeETHPortal" target="_blank"><img src="partners/catdoge.jpg" alt="Partner 2"></a>
+            <a href="https://t.me/+wMgWRNe3PxA0NmU8" target="_blank"><img src="partners/defi-eagles.jpg" alt="Partner 3"></a>
+            <a href="https://t.me/TheGemPad" target="_blank"><img src="partners/gempad.jpg" alt="Partner 4"></a>
+            <a href="https://t.me/protoverse_ai" target="_blank"><img src="partners/protoverse.jpg" alt="Partner 5"></a>
+            <a href="https://t.me/safeone_services" target="_blank"><img src="partners/safeone.jpg" alt="Partner 6"></a>
+            <!-- Add more images as needed with corresponding links -->
+        </div>
+    </div>
+</section>
+
+<!-- Token Section -->
+<section id="token" class="token-section">
+    <div class="container">
+        <!-- Token Heading -->
+        <h1 class="center" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">Token</h1>
+
+        <!-- Token Card -->
+        <div class="token-card">
+            <!-- Writeup on the left -->
+            <div class="token-writeup" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="200" data-aos-offset="0">
+                <h3>$Gem Token - A Lounge Sponsored Token</h3>
+                <p>$10k liquidity pool ($5k of tokens, $5k from Czodiac Czusd Investment) and lock the liquidity. Launch at $1, so the initial price is $1, and market cap is $5k.</p>
+                <p>All rewards would go into a team wallet.</p>
+                
+                <!-- Tax breakdown list -->
+                <ul>
+                    <li>2% Buy tax</li>
+                    <li>3% Sell tax</li>
+                </ul>
+                
+                <p>Launch Date: 10th December 2023 @ 16:00 UTC</p>
+            </div>
+
+            <!-- Rounded image on the right -->
+            <div class="rounded-image" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+                <img src="img/gem2.jpg" alt="Rounded Image">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
 <!-- Team Section -->
 <section class="team-section">
     <div class="container">
-        <h2>Our Team</h2>
+        <h2 data-aos="fade-up" data-aos-duration="3000">Our Team</h2>
 
         <!-- Team Member Cards -->
         <div class="team-container">
             <!-- Team Member 1 -->
-            <div class="team-member">
+            <div class="team-member" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                 <img src="team-img/gorilla_photo.jpg" alt="Team Member 1">
                 <h3>(C)ertified (A)pe</h3>
                 <p><b>Role:</b> Host and Lounge Analyst</p>
                 <div class="social-media">
-                    <a href="https://t.me/Certified_Ape" target="_blank"><i class="fab fa-telegram"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-x"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://t.me/Certified_Ape" target="_blank"><i class="fab fa-telegram" id="social-icon"></i></a>
+                    <a href="https://twitter.com/Certified_Ape1" target="_blank"><i class="fa-brands fa-x-twitter" id="social-icon"></i></a>
+                    <!-- <a href="#" target="_blank"><i class="fab fa-facebook"></i></a> -->
                 </div>
             </div>
 
-            <div class="team-member">
+            <div class="team-member" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                 <img src="team-img/abidur.jpg" alt="Team Member 2">
                 <h3>+🅰️🅱️🅸🅳🆄🆁</h3>
                 <p><b>Role:</b> Head of Operations and AMA </p>
                 <div class="social-media">
-                    <a href="https://t.me/abidur40" target="_blank"><i class="fab fa-telegram"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-x"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://t.me/abidur40" target="_blank"><i class="fab fa-telegram" id="social-icon"></i></a>
+                    <!-- <a href="#" target="_blank"><i class="fab fa-x"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-facebook"></i></a> -->
                 </div>
             </div>
-            <div class="team-member">
+            <div class="team-member" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                 <img src="team-img/web3lady.jpg" alt="Team Member 1">
                 <h3>Web3Lady</h3>
                 <p><b>Role:</b> Database record keeper, Lounge Ambasssador</p>
                 <div class="social-media">
-                    <a href="https://t.me/FavouredFaith6" target="_blank"><i class="fab fa-telegram"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-x"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://t.me/FavouredFaith6" target="_blank"><i class="fab fa-telegram" id="social-icon"></i></a>
+                    <a href="https://twitter.com/favouredfaith6" target="_blank"><i class="fa-brands fa-x-twitter" id="social-icon"></i></a>
+                    <!-- <a href="#" target="_blank"><i class="fab fa-facebook"></i></a> -->
                 </div>
             </div>
-            <div class="team-member">
+            <div class="team-member" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                 <img src="team-img/Worldclasslady.jpg" alt="Team Member 1">
                 <h3>World Class Lady</h3>
                 <p><b>Role:</b> Lounge Writer and Welfare</p>
                 <div class="social-media">
-                    <a href="https://t.me/WorldClassLady" target="_blank"><i class="fab fa-telegram"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-x"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://t.me/WorldClassLady" target="_blank"><i class="fab fa-telegram" id="social-icon"></i></a>
+                    <!-- <a href="#" target="_blank"><i class="fab fa-x"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-facebook"></i></a> -->
                 </div>
             </div>
-            <div class="team-member">
+            <div class="team-member" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                 <img src="team-img/Shawon Shaikh.jpg" alt="Team Member 1">
                 <h3>Shawon Shaikh</h3>
                 <p><b>Role:</b> Moderator, Graphic Designer</p>
                 <div class="social-media">
-                    <a href="https://t.me/shawonshaikh" target="_blank"><i class="fab fa-telegram"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-x"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://t.me/shawonshaikh" target="_blank"><i class="fab fa-telegram" id="social-icon"></i></a>
+                     <a href="https://x.com/ShawonShaikh7?t=nk6uLsh47hOoEfPjWQbAXQ&s=09" target="_blank"><i class="fa-brands fa-x-twitter" id="social-icon"></i></a>
+                    <a href="https://instagram.com/shawon.ui?igshid=NGVhN2U2NjQ0Yg==" target="_blank"><i class="fab fa-instagram" id="social-icon"></i></a>
                 </div>
             </div>
-            <div class="team-member">
+            <div class="team-member" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                 <img src="team-img/lizzy.jpg"alt="Team Member 1">
                 <h3>Lizzy</h3>
                 <p><b>Role:</b> Welfare and Logistics Manager</p>
                 <div class="social-media">
-                    <a href="https://t.me/Lizzy_liz1" target="_blank"><i class="fab fa-telegram"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-x"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://t.me/Lizzy_liz1" target="_blank"><i class="fab fa-telegram" id="social-icon"></i></a>
+                    <a href="https://twitter.com/miss_Lizzy_liz" target="_blank"><i class="fa-brands fa-x-twitter" id="social-icon"></i></a>
+                    <!-- <a href="#" target="_blank"><i class="fab fa-facebook"></i></a> -->
                 </div>
             </div>
-            <div class="team-member">
-                <img src="team8.jpg" alt="Team Member 8">
+            <div class="team-member" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                <img src="team-img/ahmed.jpeg" alt="Team Member 8">
                 <h3>S.Ahmed</h3>
                 <p><b>Role:</b> Moderator</p>
                 <div class="social-media">
-                    <a href="https://t.me/Doctor5043" target="_blank"><i class="fab fa-telegram"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-x"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://t.me/Doctor5043" target="_blank"><i class="fab fa-telegram" id="social-icon"></i></a>
+                    <!-- <a href="#" target="_blank"><i class="fab fa-x"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-facebook"></i></a> -->
                 </div>
             </div>
         </div>
@@ -216,70 +262,90 @@
 </section>
 
 <!-- Roadmap Section -->
-<section class="roadmap-section">
-    <div class="container">
-        <h2>Roadmap</h2>
+<div class="roadmap-container">
+    <h1 data-aos="fade-up" data-aos-duration="3000">Roadmap</h1>
 
-        <!-- Roadmap Phases -->
-        <div class="roadmap-container">
-            <!-- Phase 1 -->
-            <div class="roadmap-phase">
-                <img src="phase1-icon.png" alt="Phase 1">
-                <h3>Phase 1</h3>
-                <ul>
-                    <li>AMAs + Community Growth</li>
-                    <li>Partnerships Building</li>
-                    <li>Whitepaper + Web creations</li>
-                </ul>
+    <div class="roadmap">
+        <div class="phase">
+            <div class="icon">
+                <span class="fas fa-check"></span>
             </div>
-
-            <!-- Repeat for other phases -->
-            
-
-            <div class="roadmap-phase">
-                <img src="phase1-icon.png" alt="Phase 1">
-                <h3>Phase 2</h3>
-                <ul>
-                    <li>G-Gem cards making</li>
-                    <li>Casino Building</li>
-                    <li>G-Gem cards unveiling and distribution</li>
-                    <li>Marketing Restructure</li>
-                </ul>
+            <div class="content" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
+                <h3>Phase 1: </h3>
+                <p>AMAs + Community Growth.</p>
+                <p>Partnerships Building.</p>
+                <p>Whitepaper + Web creations</p>
             </div>
+        </div>
 
+        <div class="phase">
+            <div class="icon">
+                <span class="fas fa-cog"></span>
+            </div>
+            <div class="content" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
+                <h3>Phase 2:</h3>
+                <p>G-Gem cards making.</p>
+                <p>Casino Building.</p>
+                <p>G-Gem cards unveiling and distribution.</p>
+                <p>Marketing Restructure.</p>
+            </div>
+        </div>
 
-            <!-- Phase 3 -->
-            <div class="roadmap-phase">
-                <img src="phase3-icon.png" alt="Phase 3">
-                <h3>Phase 3</h3>
-                <ul>
-                    <li>Humanity Campaign</li>
-                    <li>Gorilla Gem Rescue Party</li>
-                    <li>Major Strategic Partnerships</li>
-                    <li>Casino REstructuring</li>
-                </ul>
+        <div class="phase">
+            <div class="icon">
+                <span class="fas fa-chart-line"></span>
+            </div>
+            <div class="content" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
+                <h3>Phase 3:</h3>
+                <p>Humanity Campaign.</p>
+                <p>Gorilla Gem Rescue Party.</p>
+                <p>Major Strategic Partnerships.</p>
+                <p>Casino Restructuring.</p>
             </div>
         </div>
     </div>
-</section>
-
-
+</div>
 
     <!-- Footer Section -->
     <footer>
         <div class="social-icons">
-            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://t.me/GorillaGemsLoungePortal" target="_blank"><i class="fab fa-telegram"></i></a>
+            <a href="https://t.me/GorillaGemsLoungeAMA" target="_blank"><i class="far fa-comments"></i></a>
+            <a href="https://x.com/GorillaGems_?s=20" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
             <!-- Add more social media icons as needed -->
         </div>
-        <p>&copy; 2023 Crypto Call Channel. All rights reserved.</p>
+        <p>&copy; 2023 Gorilla Gem Lounge. All rights reserved.</p>
     </footer>
 
     <!-- Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
     <!-- JavaScript for dynamic content -->
     <script src="index.js"></script>
+    <!-- Add this script at the end of your HTML, just before the closing </body> tag -->
+<script>
+    // Function to smoothly scroll to a target section
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        window.scrollTo({
+            top: section.offsetTop,
+            behavior: 'smooth'
+        });
+    }
+
+    // Add an event listener to each navigation link
+    document.querySelectorAll('.navbar-menu a').forEach(link => {
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
+            const sectionId = this.getAttribute('href').substring(1); // Remove the '#' from the href
+            scrollToSection(sectionId);
+        });
+    });
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 
 </body>
 </html>
