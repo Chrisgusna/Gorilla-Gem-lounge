@@ -187,7 +187,7 @@ body {
     }
 
     .writeup {
-        margin: 0; /* Remove right margin on mobile */
+        margin: 5px; /* Remove right margin on mobile */
         text-align: center; /* Center the text */
     }
 
